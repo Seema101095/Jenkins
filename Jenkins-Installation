@@ -11,5 +11,5 @@
 # Intall Jenkins:-
      sudo yum install jenkins -y
 # Enable and Start Jenkins:-
-     sudo systemctl start Jenkins
+     sudo systemctl start jenkins
      sudo systemctl enable jenkins
