@@ -1,0 +1,15 @@
+# Installation of Jenkins on Amazon Linux Machine:-
+# First list Java available on machine:-
+       yum list java*
+# Install the latest version:-
+      Yum install java-17-amazon-corretto -y 
+# Add Jenkins repo:- 
+      sudo wget -O /etc/yum.repos.d/jenkins.repo \
+      https://pkg.jenkins.io/redhat-stable/jenkins.repo
+# Add the key:-
+     sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
+# Intall Jenkins:-
+     sudo yum install jenkins -y
+# Enable and Start Jenkins:-
+     sudo systemctl start Jenkins
+     sudo systemctl enable jenkins
